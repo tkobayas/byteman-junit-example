@@ -1,0 +1,8 @@
+RULE throwExceptionOnMyInternalComponent
+CLASS org.example.app.MyInternalComponent
+METHOD doInternalWork
+AT EXIT
+IF TRUE
+DO
+  throw new RuntimeException("something wrong happened!");
+ENDRULE
