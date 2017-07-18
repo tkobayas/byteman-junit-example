@@ -21,6 +21,6 @@ public class MyServiceTest {
         
         //System.out.println(result);
 
-        assertFalse(myService.isLocked());
+        assertFalse("Lock is not released!", myService.isLocked());
     }
 }
